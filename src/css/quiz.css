@@ -1,0 +1,49 @@
+.custom_btn {
+    width: 180px;
+    height: 48px;
+    background: #ff8126;
+    border-radius: 24px;
+    transition: color .3s ease, border-color .3s ease, transform .3s ease;
+    color: #fff;
+    cursor: pointer;
+}
+
+.adText {
+    text-align: center;
+}
+
+.quiz_rule_heder {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    color: #dc1c2c;
+}
+
+.quiz_rule {
+    line-height: 32px;
+}
+
+.asdasdasd > span {
+    display: flex;
+}
+
+.asdasdasd span span {
+    margin-right: 10px;
+}
+.asdasdasd span.kjkj {
+    margin: 0;
+}
+
+.failHeader {
+    font-size: 28px;
+    font-weight: 600;
+    color: #dc1c2c;
+    padding: 30px 0px 30px 0px;
+}
+
+.quizTypeHeader {
+    font-size: 28px;
+    font-weight: 600;
+    color: #dc1c2c;
+    padding: 30px 0px 30px 0px;
+}

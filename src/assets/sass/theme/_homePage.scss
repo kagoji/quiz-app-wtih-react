@@ -1,0 +1,51 @@
+.homePage {
+  background-image: url(./../img/1.1.png);
+
+
+
+  .homeContent {
+    padding-bottom: 60px;
+
+    .logoHome {
+      margin-bottom: -100px;
+    }
+
+
+    .btnGroup {
+      .startBtn {
+        margin-bottom: 20px;
+        position     : relative;
+        overflow     : hidden;
+        display: inline-block;
+
+        &::before {
+          position     : absolute;
+          content      : "";
+          left         : 30px;
+          top          : -10px;
+          width        : 35px;
+          height       : 35px;
+          background   : #fff;
+          border-radius: 50%;
+          opacity      : 0.12;
+        }
+
+        &::after {
+          position     : absolute;
+          content      : "";
+          right        : 25px;
+          bottom       : -30px;
+          width        : 60px;
+          height       : 60px;
+          background   : #fff;
+          border-radius: 50%;
+          opacity      : 0.12;
+        }
+      }
+    }
+    .terms {
+      max-width  : 285px;
+      width      : 100%;
+    }
+  }
+}

@@ -1,0 +1,190 @@
+.leaderBoardMainWrap {
+    .topBgImg {
+        top: -90px;
+    }
+
+    &.HomeSingleBudgetWrap {
+        .topBgImg {
+            top: -150px;
+        }
+    }
+}
+
+.leadersTabsContentWrap {
+    padding: 45px 0;
+
+    .nav-tabs {
+        border         : none;
+        justify-content: center;
+
+        .nav-item {
+            border: none;
+
+            .nav-link {
+                border         : 1px solid #fff;
+                margin         : 0 5px;
+                padding        : 0;
+                width          : 105px;
+                height         : 30px;
+                display        : flex;
+                align-items    : center;
+                justify-content: center;
+                border-radius  : 20px;
+                font-weight    : 600;
+                color          : #fff;
+                font-size      : 10px;
+
+                &.active {
+                    color: #f76454;
+                }
+            }
+        }
+    }
+
+    .tabContentWrap {
+        .tabContentInner {
+            padding-top: 30px;
+        }
+    }
+}
+
+.topLeader {
+    margin-bottom: 50px;
+}
+
+.leaderImg {
+    max-width: 60px;
+    width    : 100%;
+    height   : 60px;
+    margin   : 0 auto 10px;
+    position : relative;
+
+    .leaderMainImg {
+        width        : 100%;
+        height       : 100%;
+        overflow     : hidden;
+        border-radius: 50%;
+        border       : 2px solid #fff;
+
+        img {
+            width : 100%;
+            height: 100%;
+        }
+    }
+
+    .crown {
+        position : absolute;
+        top      : -5px;
+        left     : 0;
+        right    : 0;
+        width    : 35px;
+        margin   : 0 auto;
+        transform: translateY(-50%);
+
+        img {}
+    }
+
+    .leaderNumbedr {
+        border-radius   : 50%;
+        background-image: -moz-linear-gradient(88deg, rgb(53, 8, 108) 0%, rgb(112, 19, 119) 43%, rgb(170, 29, 129) 100%);
+        background-image: -webkit-linear-gradient(88deg, rgb(53, 8, 108) 0%, rgb(112, 19, 119) 43%, rgb(170, 29, 129) 100%);
+        background-image: -ms-linear-gradient(88deg, rgb(53, 8, 108) 0%, rgb(112, 19, 119) 43%, rgb(170, 29, 129) 100%);
+        box-shadow      : -1.219px 9.925px 34.8px 5.2px rgba(248, 158, 130, 0.58);
+        position        : absolute;
+        right           : 0;
+        bottom          : 0;
+        width           : 20px;
+        height          : 20px;
+        z-index         : 1;
+        display         : flex;
+        align-items     : center;
+        justify-content : center;
+        color           : #fff;
+        font-size       : 14px;
+        font-weight     : 600;
+    }
+}
+
+.leaderTopInfo {
+    .leaderName {
+        color        : #fff;
+        margin-bottom: 15px;
+        font-family  : $ndb;
+        font-size    : 16px;
+    }
+
+    .pointsWrap {
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+
+        .pointsSingleItem {
+            display      : flex;
+            align-items  : center;
+            background   : #fff;
+            margin       : 0 5px;
+            padding      : 5px 5px;
+            max-width    : 75px;
+            width        : 100%;
+            border-radius: 25px;
+            font-size    : 14px;
+            font-weight  : 600;
+            color        : #4e4a64;
+
+            img {
+                max-width   : 18px;
+                width       : 100%;
+                margin-right: 5px;
+            }
+
+            .point {}
+        }
+    }
+}
+
+
+.leaderListWrap {
+    padding-bottom: 20px;
+    // height    : 270px;
+    // overflow-x: hidden;
+    // overflow-y: scroll;
+
+    .row {
+        margin: 0 -5px;
+
+        .col-4 {
+            padding: 0 5px;
+        }
+    }
+
+    .leaderSingleItem {
+        margin: 10px 0;
+
+        .leaderImg {
+            max-width: 70px;
+            height   : 70px;
+
+            .leaderMainImg {
+                border: 2px solid $tcolor;
+
+                img {}
+            }
+
+            .leaderNumbedr {
+                box-shadow: none;
+            }
+        }
+
+        .leaderInfo {
+            .leaderName {
+                font-size  : 12px;
+                font-weight: 600;
+                color      : $tcolor;
+            }
+
+            .leaderPoint {
+                color: #353434;
+            }
+        }
+    }
+}

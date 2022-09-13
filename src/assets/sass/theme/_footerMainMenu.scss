@@ -1,0 +1,97 @@
+.footerMainMenuWrap {
+    position: fixed;
+    bottom  : 0;
+    left    : 0;
+    width   : 100%;
+    z-index : 1;
+
+    .footerMenUBg {
+        position: absolute;
+        bottom  : 0;
+        left    : 0;
+        width   : 100%;
+        z-index : 1;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .footerMainMenuBody {
+        position: relative;
+        z-index : 2;
+        width   : 100%;
+
+        .footerMainMenu {
+            margin         : 0;
+            padding        : 0;
+            list-style     : none;
+            width          : 100%;
+            display        : flex;
+            align-items    : center;
+            justify-content: center;
+
+            li {
+                margin: 0px 15px;
+
+                a {
+                    display: inline-block;
+                    margin : 0;
+                    padding: 10px;
+
+                    img {
+                        max-width: 30px;
+                        width    : 100%;
+                    }
+
+                    svg {
+                        width : 20px;
+                        height: 20px;
+                        fill  : #768099;
+                    }
+                }
+
+                &.homeBtn {
+                    a {
+                        border-radius   : 50%;
+                        background-image: -moz-linear-gradient(88deg, #768099 0%, #768099 100%);
+                        background-image: -webkit-linear-gradient(88deg, #768099 0%, #768099 100%);
+                        background-image: -ms-linear-gradient(88deg, #768099 0%, #768099 100%);
+                        box-shadow      : none;
+                        width           : 40px;
+                        height          : 40px;
+                        display         : flex;
+                        align-items     : center;
+                        justify-content : center;
+                        transform       : translateY(-18px);
+
+                        svg {
+                            fill: #fff
+                        }
+                    }
+                }
+
+                &.active {
+                    a {
+                        svg {
+                            fill: $tcolor;
+                        }
+                    }
+
+                    &.homeBtn {
+                        a {
+                            background-image: -moz-linear-gradient(88deg, rgb(237, 60, 72) 0%, rgb(255, 132, 94) 100%);
+                            background-image: -webkit-linear-gradient(88deg, rgb(237, 60, 72) 0%, rgb(255, 132, 94) 100%);
+                            background-image: -ms-linear-gradient(88deg, rgb(237, 60, 72) 0%, rgb(255, 132, 94) 100%);
+                            box-shadow      : -1.219px 9.925px 34.8px 5.2px rgba(255, 118, 76, 0.44);
+
+                            svg {
+                                fill: #fff
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

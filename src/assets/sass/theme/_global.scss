@@ -1,0 +1,216 @@
+@charset "utf-8";
+//-----Color class style
+
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: $open;
+  font-size  : 12px;
+  line-height: 20px;
+  background : #f4f5f6;
+  // max-width: 414px;
+  // width: 100%;
+  // margin: 0 auto;
+}
+
+.tcolor {
+  color: $tcolor;
+}
+
+.dark {
+  color: $dark;
+}
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+
+a {
+  text-decoration: $a-text-decuration;
+  color          : $a-color;
+  transition     : all 0.3s;
+}
+
+.underline {
+  text-decoration: underline !important;
+}
+
+.hover-color:hover {
+  color: $tcolor;
+}
+
+a:hover {
+  color          : $tcolor;
+  text-decoration: $a-text-decuration;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+a.link {
+  color: $tcolor;
+}
+
+a.link:hover {
+  color: $tcolor !important;
+}
+
+ul {
+  margin    : 0;
+  padding   : 0;
+  list-style: none;
+}
+
+p {
+  font-family: $ndb;
+  line-height: 20px;
+  font-size  : 12px;
+  margin     : 0 auto;
+
+  a {
+    color: #b61570;
+  }
+}
+
+
+.btnGroup {
+  .btnGlob {
+    font-family     : $ndb;
+    font-size       : 20px;
+    border-radius   : 80px;
+    background-image: -moz-linear-gradient(88deg, rgb(237, 60, 72) 0%, rgb(255, 132, 94) 100%);
+    background-image: -webkit-linear-gradient(88deg, rgb(237, 60, 72) 0%, rgb(255, 132, 94) 100%);
+    background-image: -ms-linear-gradient(88deg, rgb(237, 60, 72) 0%, rgb(255, 132, 94) 100%);
+    box-shadow      : -1.219px 9.925px 34.8px 5.2px rgba(255, 118, 76, 0.44);
+    border          : none;
+    padding         : 10px 50px;
+    color           : $white;
+    display: inline-block;
+
+    &.btnGradient {}
+  }
+}
+
+.h100vh {
+  height: 100vh;
+}
+
+.mainBody {
+  background-attachment: scroll;
+  background-repeat    : no-repeat;
+  background-position  : 0 0;
+  background-size      : 100% auto;
+  width                : 100%;
+  display              : flex;
+  text-align           : center;
+  position             : relative;
+  overflow             : hidden;
+}
+
+.dots {
+  position: fixed;
+  right   : 0;
+  bottom  : 0;
+  z-index : -1;
+
+  img {
+    width: 100%;
+  }
+}
+
+.topBgImg {
+  position: absolute;
+  top     : -70px;
+  left    : 0;
+  width   : 100%;
+  z-index : -1;
+
+  img {
+    width: 100%;
+  }
+}
+
+.shape {
+  position : absolute;
+  left     : 0;
+  bottom   : 0;
+  z-index  : 1;
+  max-width: 180px;
+  width    : 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.backArrow {
+  position : absolute;
+  top      : 20px;
+  left     : 20px;
+  max-width: 30px;
+  width    : 100%;
+}
+
+.notifiIcon {
+  position: absolute;
+  top     : 22px;
+  right   : 20px;
+  .note {
+    width: 13px;
+    height: 13px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $tcolor;
+    font-size: 8px;
+    font-weight: 700;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    right: -3px;
+  }
+
+  i {
+    color    : #fff;
+    font-size: 20px;
+  }
+}
+
+.sendBtn {
+  border   : none;
+  padding  : 0;
+  position : absolute;
+  bottom   : 0;
+  left     : 0;
+  right    : 0;
+  margin   : 0 auto;
+
+  i {
+      border-radius   : 50%;
+      background-image: -moz-linear-gradient(88deg, rgb(237, 60, 72) 0%, rgb(255, 132, 94) 100%);
+      background-image: -webkit-linear-gradient(88deg, rgb(237, 60, 72) 0%, rgb(255, 132, 94) 100%);
+      background-image: -ms-linear-gradient(88deg, rgb(237, 60, 72) 0%, rgb(255, 132, 94) 100%);
+      box-shadow      : -1.219px 9.925px 34.8px 5.2px rgba(248, 158, 130, 0.58);
+      width           : 50px;
+      height          : 50px;
+      display         : flex;
+      align-items     : center;
+      justify-content : center;
+      color           : $white;
+  }
+}

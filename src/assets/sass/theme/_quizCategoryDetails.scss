@@ -1,0 +1,127 @@
+.quizCategoryDetailsWrap {
+    height     : 100%;
+    overflow   : hidden;
+    position   : relative;
+    padding-top: 70px;
+
+    .topBgImg {
+        top   : initial;
+        bottom: 0;
+    }
+    .closeBtn {
+        .btn {
+        outline: none;
+        box-shadow: none;
+            img {
+                max-width: 35px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.quizCategoryDetailsContent {
+    background   : #fff;
+    padding      : 30px;
+    margin: 0 10px;
+    border-radius: 20px;
+    box-shadow   : -1.219px 9.925px 56.55px 8.45px rgba(228, 228, 228, 0.004);
+    margin-bottom: 25px;
+
+    .topSec {
+        display        : flex;
+        align-items    : center;
+        justify-content: space-between;
+        margin-bottom  : 50px;
+
+        .secTitle {
+            color      : #6a728d;
+            font-size  : 16px;
+            font-family: $ndb;
+        }
+
+        .quizPoint {
+            color      : #ff845e;
+            font-size  : 16px;
+            font-family: $ndb;
+            display    : flex;
+            align-items: center;
+            text-decoration: none;
+            display: inline-block;
+
+            img {
+                margin-right: 5px;
+                max-width   : 20px;
+                width       : 100%;
+            }
+        }
+    }
+
+    .quizDetailsList {
+        .list {
+            li {
+                color        : #6a728d;
+                position     : relative;
+                padding-left : 13px;
+                margin-bottom: 20px;
+
+                &::before {
+                    position     : absolute;
+                    content      : "";
+                    left         : 0;
+                    top          : 7px;
+                    width        : 7px;
+                    height       : 7px;
+                    background   : #ff845e;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .playNowBtn {
+            padding-top: 15px;
+
+            .startBtn {
+                // background: url(./../img/images/button-2.png) no-repeat scroll top center / cover;
+
+                position : relative;
+                overflow : hidden;
+                padding  : 5px 25px;
+                font-size: 12px;
+
+                .circle1 {
+                    position     : absolute;
+                    top          : -5px;
+                    left         : 5px;
+                    width        : 20px;
+                    height       : 20px;
+                    background   : #fff;
+                    border-radius: 50%;
+                    opacity      : 0.12;
+
+                    &::before {
+                        position     : absolute;
+                        content      : "";
+                        width        : 5px;
+                        height       : 5px;
+                        background   : #fff;
+                        border-radius: 50%;
+                        bottom       : -8px;
+                    }
+
+                }
+
+                .circle2 {
+                    position     : absolute;
+                    bottom       : -15px;
+                    right        : 5px;
+                    width        : 30px;
+                    height       : 30px;
+                    background   : #fff;
+                    border-radius: 50%;
+                    opacity      : 0.12;
+                }
+            }
+        }
+    }
+}
